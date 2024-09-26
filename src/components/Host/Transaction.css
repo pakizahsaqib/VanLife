@@ -1,0 +1,29 @@
+.transaction{
+    flex-grow: 1;
+    background-color: #FFF7ED;
+    padding: 20px;
+    color: #161616;
+    margin-bottom: 70px;
+}
+
+.transactions-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions-container>h1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.transactions-container>p
+{
+    font-size: 0.9rem;
+}
+.transactions-container>p>a{
+        font-size: 0.9rem;
+        border-bottom:  1px solid #000;
+        cursor: pointer;
+}

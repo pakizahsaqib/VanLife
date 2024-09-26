@@ -1,0 +1,80 @@
+.vanlite{
+    flex-grow: 1;
+    background-color: #FFF7ED;
+    padding: 20px;
+    width: 100%;
+    margin: 110px auto 70px;
+}
+.vanlite>i{
+    color: #161616;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.vanlite>a:hover{  
+    color: #161616;
+    cursor: pointer;
+    border-bottom: 1px solid #161616;
+}
+.vanlite-wrapper{
+   
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #161616;
+}
+.vanlite-details>p{
+    margin: 20px  0;
+    font-size: 0.9rem;
+}
+.vanlite-wrapper>ul>li{
+    margin: 20px 0 0;
+    font-size: 0.8rem;
+}
+.vanlite-header{
+    display: flex;
+    align-items: center;
+}
+.vanlite-header>img
+{
+    width: 20%;
+    min-width: 100px;
+    max-width: 150px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.vanlite-header>div>h1{
+    font-size: 1.25rem;
+    margin: 10px 0 0;
+    
+}
+.vanlite-header>div>p{
+    font-size: 0.8rem;
+}
+
+.vanlite-pricing{
+    margin: 20px 0;
+}
+.vanlite-pricing>p>span{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.vanlite-pricing>p{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.vanlite-img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.vans-list{
+    flex-grow: 1;
+    margin-bottom: 70px;
+}
+.vans-list>h1{
+    font-size: 1.25rem;
+    color: #161616;
+    margin-bottom: 20px;
+}

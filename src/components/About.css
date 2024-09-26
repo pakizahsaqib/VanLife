@@ -1,0 +1,50 @@
+.about{
+    position: relative;
+    width: 90%;
+    margin: 110px auto 70px; 
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    background-color: #fff;
+    padding: 40px;
+    color: #000;
+   
+   
+}
+.about-img{
+    width: 100%;
+    border-radius: 5px;
+}
+.about-title{
+    margin:20px 0;
+    font-size: 1.5rem;
+}
+.about-content{
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+.about-explore{
+    width: 100%;
+    background-color: #FFCC8D;
+    padding: 30px;
+    border-radius: 5px;    
+}
+.explore-title{
+    font-size: 1rem;
+    margin: 0 0 20px;
+}
+.explore-btn{
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin: 10px 0;
+    background-color: #161616;
+    color: #fff;
+}
+.explore-btn:hover{
+    background-color: #161616;
+    color: #fff;
+}

@@ -1,0 +1,80 @@
+
+ .sign-in-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-grow: 1;
+
+
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .sign-in-heading {
+    font-size: 1.25rem;
+    color: #161616;
+
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-form  {
+    margin-bottom: 15px;
+  }
+  
+  .sign-in-form>input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    font-size: 0.8rem;
+  }
+  
+  .sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF8C38;
+
+    color: white;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 20px 0 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sign-in-button>a {
+   
+    color: #fff;
+  }
+  
+  .sign-in-button:hover {
+    background-color:  #fb6900;
+    color: #fff;
+  }
+  .sign-in-button>a:hover {
+    color: #fff;
+  }
+  .account-message {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #161616;
+
+  }
+    
+  .create-account {
+    color: #FF8C38;
+    cursor: pointer;
+  }
+
+  .create-account:hover {
+    color: #fb6900;
+    border-bottom: 1px solid #FF8C38; ;
+  }
+  

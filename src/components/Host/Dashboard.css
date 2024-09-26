@@ -1,0 +1,45 @@
+.dashboard{
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    color: #161616;
+    overflow-y: scroll;
+   
+
+}
+.db-item1{
+    padding: 20px;
+    background-color:  #FFEAD0;
+
+}
+.db-item1-content,.db-item2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-msg{
+    font-size: 1.25rem;
+    margin: 15px 0;
+}
+.total-income{
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+.db-item2{
+    height: 100px;
+    padding: 20px;
+    background: #FFDDB2;
+    font-size: 1rem;
+    font-weight: 700px;
+
+}
+.fa-solid.fa-star{
+    color: #FF8C38;
+    margin: 0 5px;
+
+}
+
+.vans-list{
+    background-color: #FFF7ED;
+    padding: 20px;
+}

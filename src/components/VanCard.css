@@ -1,0 +1,60 @@
+.vancard {
+    width: 100%; /* Set width to 100% of the grid column */
+    max-width: 300px; /* Control max width to avoid stretching on large screens */
+    margin: 20px auto; /* Center cards within their grid column */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better visual appeal */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .vancard-img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto; /* Ensures the image is responsive */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .van-details {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .van-price {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .van-price > span {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    font-weight: 300;
+  }
+  a{
+    text-decoration: none;
+    color: #5c5c5c;
+  }
+
+  .van-cat {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    background-color: #e17654;
+    padding: 5px 10px;
+    color: #ffeadd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start; /* Align button to the start */
+    transition: background-color 0.3s ease;
+  }
+  
+  .van-btn:hover {
+    background-color: #d96544; /* Add hover effect */
+  }
+  

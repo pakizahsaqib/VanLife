@@ -1,0 +1,15 @@
+.review{
+    border-bottom: 0.5px solid #b8b8b8;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.review>p{
+    margin: 15px 0;
+}
+.review>p>strong{
+    margin-right: 10px;
+}
+.review-content{
+    font-size: 0.85rem;
+}
