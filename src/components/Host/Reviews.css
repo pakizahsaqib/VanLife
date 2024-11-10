@@ -1,49 +1,47 @@
-.reviews{
-    margin-bottom: 70px;
-    flex-grow: 1;
-    color: #161616;
-    background: #FFF7ED;
-    padding:0 20px;
+.reviews {
+  flex-grow: 1;
+  color: #161616;
+  background: #fff7ed;
+  padding: 0 20px;
 }
-.reviews>h1{
-    font-size: 1.25rem;
-    margin: 20px 0 5px;
+.reviews > h1 {
+  font-size: 1.25rem;
+  margin: 20px 0 5px;
 }
 
-#color{
-    background-color: #FF8C38;
+#color {
+  background-color: #ff8c38;
 }
-.rating-bar{
-    margin: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5px;
-    font-size: 0.9rem;
+.rating-bar {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  font-size: 0.9rem;
 }
-.reviews>p>strong{
-    font-size: 1rem;
+.reviews > p > strong {
+  font-size: 1rem;
 }
-.reviews>h1>span{
-    color: #4D4D4D;
-    margin-left: 10px;
-    font-size: 0.9rem;
-    font-weight: normal;
-    
+.reviews > h1 > span {
+  color: #4d4d4d;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
-.reviews>h1>span>a{
-    border-bottom: 1px solid #161616;
+.reviews > h1 > span > a {
+  border-bottom: 1px solid #161616;
 }
-.ratings{
-    margin: 10px 0;
+.ratings {
+  margin: 10px 0;
 }
-.rating-bar>p{
-    width: 10px;
+.rating-bar > p {
+  width: 10px;
 }
-.bar{
-    margin: 0 20px;
-    width: 90%;
-    background-color:#B9B9B9;
-    height: 10px;
-    border-radius: 10px;
+.bar {
+  margin: 0 20px;
+  width: 90%;
+  background-color: #b9b9b9;
+  height: 10px;
+  border-radius: 10px;
 }

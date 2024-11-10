@@ -1,30 +1,68 @@
-import React, { useState } from 'react'
-import './Header.css'
-import {Link} from 'react-router-dom'
-import Dashboard from './Dashboard'
-import Vanlite from './Vanlite'
-import Transaction from './Transaction'
-import Reviews from './Reviews'
+import React, { useState, useEffect } from "react";
+import "./Header.css";
+import { NavLink, Outlet } from "react-router-dom";
+import axios from "axios";
 
-const Header = ({data}) => {
-  const [selectedTab, setSelectedTab] = useState('dashboard')
+const Header = () => {
+  const [vanData, setVanData] = useState([]);
+  useEffect(() => {
+    const fetchVanData = async () => {
+      try {
+        const response = await axios.get("/api/vans");
+        setVanData(response.data.vans);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchVanData();
+  }, []);
+
+  const activeStyle = {
+    color: "#000",
+    fontWeight: "700",
+  };
   return (
     <>
-      <div className='header'>
-          <ul>
-              <li><Link to="#" onClick={() => setSelectedTab('dashboard')}>Dashboard</Link></li>
-              <li><Link to="#" onClick={() => setSelectedTab('transaction')}>Income</Link></li>
-              <li><Link to="#" onClick={() => setSelectedTab('allvans')}>Vans</Link></li>
-              <li><Link to="#" onClick={() => setSelectedTab('review')}>Reviews</Link></li>
-          </ul>
+      <div className="header">
+        <ul>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              to="."
+              end
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              to="transaction"
+            >
+              Income
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              to="allvans"
+            >
+              Vans
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              to="review"
+            >
+              Reviews
+            </NavLink>
+          </li>
+        </ul>
       </div>
-        {selectedTab === 'dashboard' && (<Dashboard data={data}/>)}
-        {selectedTab === 'transaction' && (<Transaction/>)}
-        {selectedTab === 'allvans' && (<Vanlite data={data}/>)}
-        {selectedTab === 'review' && (<Reviews/>)}
+      <Outlet context={{ vanData }} />
     </>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Header;

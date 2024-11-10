@@ -1,0 +1,27 @@
+.errorpage {
+  width: 100%;
+  flex-grow: 1;
+  margin: 110px auto 0;
+  padding: 40px;
+  background-color: #fff7ed;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.err-btn {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 500px;
+  background-color: #161616;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: 5px;
+}
